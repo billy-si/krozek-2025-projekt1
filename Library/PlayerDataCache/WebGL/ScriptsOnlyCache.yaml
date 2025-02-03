@@ -18,7 +18,6 @@ ScriptsOnlyBuild:
     Unity.VisualScripting.Core.dll:
     - Unity.VisualScripting.SceneVariables
     - Unity.VisualScripting.Variables
-    - Unity.VisualScripting.VariablesAsset
     Unity.VisualScripting.Flow.dll:
     - Unity.VisualScripting.ScriptGraphAsset
     - Unity.VisualScripting.ScriptMachine
@@ -108,25 +107,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2802}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 3268}
     - Class: 114
-      Script: {instanceID: 3322}
+      Script: {instanceID: 3324}
     - Class: 114
-      Script: {instanceID: 4058}
+      Script: {instanceID: 4060}
     - Class: 114
-      Script: {instanceID: 4308}
+      Script: {instanceID: 4310}
     - Class: 114
-      Script: {instanceID: 4670}
+      Script: {instanceID: 4672}
     - Class: 114
-      Script: {instanceID: 5000}
+      Script: {instanceID: 5002}
     - Class: 114
-      Script: {instanceID: 5548}
+      Script: {instanceID: 5550}
     - Class: 114
-      Script: {instanceID: 5698}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 6012}
+      Script: {instanceID: 6014}
     - Class: 114
-      Script: {instanceID: 7314}
+      Script: {instanceID: 7316}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128

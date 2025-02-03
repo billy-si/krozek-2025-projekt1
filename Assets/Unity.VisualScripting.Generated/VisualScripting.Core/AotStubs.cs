@@ -802,19 +802,19 @@ namespace Unity.VisualScripting.Generated.Aot
 	// Unity.VisualScripting.ScriptMachine.op_Inequality
 	// --------------- Plugin Stubs
 	// --------------- Asset Stubs
-	// UnityEngine.Renderer.GetMaterials
-	// UnityEngine.GameObject.Find
-	// UnityEngine.GameObject.Destroy
-	// UnityEngine.Vector3.x
-	// UnityEngine.Transform.localScale
 	// UnityEngine.Vector3..ctor
-	// UnityEngine.Component.tag
+	// UnityEngine.Transform.localScale
+	// UnityEngine.Vector3.x
+	// UnityEngine.GameObject.Destroy
+	// UnityEngine.GameObject.Find
+	// UnityEngine.Renderer.GetMaterials
+	// UnityEngine.Rigidbody.velocity
+	// UnityEngine.GameObject.FindWithTag
 	// UnityEngine.Transform.position
+	// UnityEngine.Component.tag
 	// UnityEngine.Component.gameObject
 	// UnityEngine.Random.Range
 	// UnityEngine.Transform.right
-	// UnityEngine.Rigidbody.velocity
-	// UnityEngine.GameObject.FindWithTag
 	// UnityEngine.Component.Destroy
 	[UnityEngine.Scripting.PreserveAttribute()]
 	public class AotStubs
@@ -9996,50 +9996,14 @@ namespace Unity.VisualScripting.Generated.Aot
 			optimized.Invoke(default(object[]));
 		}
 		
-		// UnityEngine.Renderer.GetMaterials
+		// UnityEngine.Vector3..ctor
 		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_Renderer_GetMaterials()
+		public static void UnityEngine_Vector3_ctor()
 		{
-			global::UnityEngine.Renderer target = default(global::UnityEngine.Renderer);
-			global::System.Collections.Generic.List<UnityEngine.Material> arg0 = default(global::System.Collections.Generic.List<UnityEngine.Material>);
-			target.GetMaterials(arg0);
-			global::Unity.VisualScripting.InstanceActionInvoker<UnityEngine.Renderer, System.Collections.Generic.List<UnityEngine.Material>> optimized = new global::Unity.VisualScripting.InstanceActionInvoker<UnityEngine.Renderer, System.Collections.Generic.List<UnityEngine.Material>>(default(global::System.Reflection.MethodInfo));
-			optimized.Invoke(default(global::UnityEngine.Renderer), arg0);
-			optimized.Invoke(default(object[]));
-		}
-		
-		// UnityEngine.GameObject.Find
-		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_GameObject_Find()
-		{
-			string arg0 = default(string);
-			global::UnityEngine.GameObject.Find(arg0);
-			global::Unity.VisualScripting.StaticFunctionInvoker<string, UnityEngine.GameObject> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<string, UnityEngine.GameObject>(default(global::System.Reflection.MethodInfo));
-			optimized.Invoke(null, arg0);
-			optimized.Invoke(default(object[]));
-		}
-		
-		// UnityEngine.GameObject.Destroy
-		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_GameObject_Destroy()
-		{
-			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
-			global::UnityEngine.Object.Destroy(arg0);
-			global::Unity.VisualScripting.StaticActionInvoker<UnityEngine.Object> optimized = new global::Unity.VisualScripting.StaticActionInvoker<UnityEngine.Object>(default(global::System.Reflection.MethodInfo));
-			optimized.Invoke(null, arg0);
-			optimized.Invoke(default(object[]));
-		}
-		
-		// UnityEngine.Vector3.x
-		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_Vector3_x()
-		{
-			global::UnityEngine.Vector3 target = default(global::UnityEngine.Vector3);
-			float accessor = target.x;
-			target.x = default(float);
-			global::Unity.VisualScripting.ReflectionFieldAccessor optimized = new global::Unity.VisualScripting.ReflectionFieldAccessor(default(global::System.Reflection.FieldInfo));
-			optimized.GetValue(default(global::UnityEngine.Vector3));
-			optimized.SetValue(default(global::UnityEngine.Vector3), default(float));
+			float arg0 = default(float);
+			float arg1 = default(float);
+			float arg2 = default(float);
+			new UnityEngine.Vector3(arg0, arg1, arg2);
 		}
 		
 		// UnityEngine.Transform.localScale
@@ -10054,26 +10018,73 @@ namespace Unity.VisualScripting.Generated.Aot
 			optimized.SetValue(default(global::UnityEngine.Transform), default(global::UnityEngine.Vector3));
 		}
 		
-		// UnityEngine.Vector3..ctor
+		// UnityEngine.Vector3.x
 		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_Vector3_ctor()
+		public static void UnityEngine_Vector3_x()
 		{
-			float arg0 = default(float);
-			float arg1 = default(float);
-			float arg2 = default(float);
-			new UnityEngine.Vector3(arg0, arg1, arg2);
+			global::UnityEngine.Vector3 target = default(global::UnityEngine.Vector3);
+			float accessor = target.x;
+			target.x = default(float);
+			global::Unity.VisualScripting.ReflectionFieldAccessor optimized = new global::Unity.VisualScripting.ReflectionFieldAccessor(default(global::System.Reflection.FieldInfo));
+			optimized.GetValue(default(global::UnityEngine.Vector3));
+			optimized.SetValue(default(global::UnityEngine.Vector3), default(float));
 		}
 		
-		// UnityEngine.Component.tag
+		// UnityEngine.GameObject.Destroy
 		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_Component_tag()
+		public static void UnityEngine_GameObject_Destroy()
 		{
-			global::UnityEngine.Component target = default(global::UnityEngine.Component);
-			string accessor = target.tag;
-			target.tag = default(string);
-			global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Component, string> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Component, string>(default(global::System.Reflection.PropertyInfo));
-			optimized.GetValue(default(global::UnityEngine.Component));
-			optimized.SetValue(default(global::UnityEngine.Component), default(string));
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object.Destroy(arg0);
+			global::Unity.VisualScripting.StaticActionInvoker<UnityEngine.Object> optimized = new global::Unity.VisualScripting.StaticActionInvoker<UnityEngine.Object>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// UnityEngine.GameObject.Find
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_GameObject_Find()
+		{
+			string arg0 = default(string);
+			global::UnityEngine.GameObject.Find(arg0);
+			global::Unity.VisualScripting.StaticFunctionInvoker<string, UnityEngine.GameObject> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<string, UnityEngine.GameObject>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// UnityEngine.Renderer.GetMaterials
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_Renderer_GetMaterials()
+		{
+			global::UnityEngine.Renderer target = default(global::UnityEngine.Renderer);
+			global::System.Collections.Generic.List<UnityEngine.Material> arg0 = default(global::System.Collections.Generic.List<UnityEngine.Material>);
+			target.GetMaterials(arg0);
+			global::Unity.VisualScripting.InstanceActionInvoker<UnityEngine.Renderer, System.Collections.Generic.List<UnityEngine.Material>> optimized = new global::Unity.VisualScripting.InstanceActionInvoker<UnityEngine.Renderer, System.Collections.Generic.List<UnityEngine.Material>>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(default(global::UnityEngine.Renderer), arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// UnityEngine.Rigidbody.velocity
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_Rigidbody_velocity()
+		{
+			global::UnityEngine.Rigidbody target = default(global::UnityEngine.Rigidbody);
+			global::UnityEngine.Vector3 accessor = target.velocity;
+			target.velocity = default(global::UnityEngine.Vector3);
+			global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Rigidbody, UnityEngine.Vector3> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Rigidbody, UnityEngine.Vector3>(default(global::System.Reflection.PropertyInfo));
+			optimized.GetValue(default(global::UnityEngine.Rigidbody));
+			optimized.SetValue(default(global::UnityEngine.Rigidbody), default(global::UnityEngine.Vector3));
+		}
+		
+		// UnityEngine.GameObject.FindWithTag
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_GameObject_FindWithTag()
+		{
+			string arg0 = default(string);
+			global::UnityEngine.GameObject.FindWithTag(arg0);
+			global::Unity.VisualScripting.StaticFunctionInvoker<string, UnityEngine.GameObject> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<string, UnityEngine.GameObject>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
+			optimized.Invoke(default(object[]));
 		}
 		
 		// UnityEngine.Transform.position
@@ -10086,6 +10097,18 @@ namespace Unity.VisualScripting.Generated.Aot
 			global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Transform, UnityEngine.Vector3> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Transform, UnityEngine.Vector3>(default(global::System.Reflection.PropertyInfo));
 			optimized.GetValue(default(global::UnityEngine.Transform));
 			optimized.SetValue(default(global::UnityEngine.Transform), default(global::UnityEngine.Vector3));
+		}
+		
+		// UnityEngine.Component.tag
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_Component_tag()
+		{
+			global::UnityEngine.Component target = default(global::UnityEngine.Component);
+			string accessor = target.tag;
+			target.tag = default(string);
+			global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Component, string> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Component, string>(default(global::System.Reflection.PropertyInfo));
+			optimized.GetValue(default(global::UnityEngine.Component));
+			optimized.SetValue(default(global::UnityEngine.Component), default(string));
 		}
 		
 		// UnityEngine.Component.gameObject
@@ -10120,29 +10143,6 @@ namespace Unity.VisualScripting.Generated.Aot
 			global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Transform, UnityEngine.Vector3> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Transform, UnityEngine.Vector3>(default(global::System.Reflection.PropertyInfo));
 			optimized.GetValue(default(global::UnityEngine.Transform));
 			optimized.SetValue(default(global::UnityEngine.Transform), default(global::UnityEngine.Vector3));
-		}
-		
-		// UnityEngine.Rigidbody.velocity
-		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_Rigidbody_velocity()
-		{
-			global::UnityEngine.Rigidbody target = default(global::UnityEngine.Rigidbody);
-			global::UnityEngine.Vector3 accessor = target.velocity;
-			target.velocity = default(global::UnityEngine.Vector3);
-			global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Rigidbody, UnityEngine.Vector3> optimized = new global::Unity.VisualScripting.InstancePropertyAccessor<UnityEngine.Rigidbody, UnityEngine.Vector3>(default(global::System.Reflection.PropertyInfo));
-			optimized.GetValue(default(global::UnityEngine.Rigidbody));
-			optimized.SetValue(default(global::UnityEngine.Rigidbody), default(global::UnityEngine.Vector3));
-		}
-		
-		// UnityEngine.GameObject.FindWithTag
-		[global::UnityEngine.Scripting.PreserveAttribute()]
-		public static void UnityEngine_GameObject_FindWithTag()
-		{
-			string arg0 = default(string);
-			global::UnityEngine.GameObject.FindWithTag(arg0);
-			global::Unity.VisualScripting.StaticFunctionInvoker<string, UnityEngine.GameObject> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<string, UnityEngine.GameObject>(default(global::System.Reflection.MethodInfo));
-			optimized.Invoke(null, arg0);
-			optimized.Invoke(default(object[]));
 		}
 		
 		// UnityEngine.Component.Destroy
